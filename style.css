@@ -1,0 +1,57 @@
+/* styling the pomodoro timer */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #252526;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.pomodoro-container{
+    background-color: #ebe6e6;
+    width: 500px;
+    border-radius: 15px;
+    padding: 30px;
+    text-align: center;
+}
+h1{
+    margin-bottom: 20px;
+}
+#timer{
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+.buttons button{
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#startBtn{
+    background-color: #4CAF50;
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+    
+}
+/* #startBtn:hover{
+    background-color: transparent;
+    border: 1.5px solid #4CAF50;
+    color: #4CAF50;
+    font-size: bold; 
+} */
+#pauseBtn{
+    background-color: #f44336;
+    color: #fff;
+}
+#resetBtn{
+    background-color: #2196F3;
+    color: #fff;
+}
