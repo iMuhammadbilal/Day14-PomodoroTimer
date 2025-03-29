@@ -7,7 +7,7 @@ const alarmTone = new Audio("media/ringtone.mp3");
 const timeCompleted = document.getElementById("timeCompleted");
 
 
-let initialTime = 1500; // 25 minutes in seconds 
+let initialTime = 3; // 25 minutes in seconds 
 let timeLeft = initialTime; // 25 minutes in seconds
 let isPaused = true; // initially the timer is paused
 let intervalId; // to store the interval id
@@ -41,6 +41,10 @@ resetBtn.addEventListener("click", () => {
 
 // start the time
 function startTimer() {
+
+    if(timeLeft === 0){  // if the time is 0, reset the time
+        timeLeft = initialTime;
+    }
     isPaused = false;
     intervalId = setInterval(() => {
         timeLeft--;
